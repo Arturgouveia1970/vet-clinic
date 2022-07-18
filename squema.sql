@@ -1,3 +1,5 @@
+CREATE TABLE animals ( name varchar(100) );
+
 CREATE TABLE animals (
     id serial NOT NULL,
     name VARCHAR(100) NOT NULL,
