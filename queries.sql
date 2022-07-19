@@ -8,3 +8,6 @@ select name, escape_attemps from animals where weight_kg > 10.5;
 select * from animals where neuterd = true;
 select * from animals where name NOT in ('Gabumon');
 select * from animals WHERE weight_kg >=10.4 and weight_kg <=17.3;
+
+ALTER table animals add primary key (id)
+

@@ -11,5 +11,21 @@ INSERT INTO animals ( id, name, date_of_birth, escape_attemps, neuterd, weight_k
 INSERT INTO animals ( id, name, date_of_birth, escape_attemps, neuterd, weight_kg) values ( 8, 'Angemon', '2005-06-12', 1, true, -45);
 INSERT INTO animals ( id, name, date_of_birth, escape_attemps, neuterd, weight_kg) values ( 9, 'Boarmon', '2005-06-07', 7, true, 20.4);
 INSERT INTO animals ( id, name, date_of_birth, escape_attemps, neuterd, weight_kg) values ( 10, 'Blossom', '1998-10-13', 3, true, 17);
-INSERT INTO animals ( id, name, date_of_birth, escape_attemps, neuterd, weight_kg) values ( 11, 'Dittp', '2022-05-14', 4, true, 22);
+
 SELECT * from animals;
+INSERT INTO animals VALUES ( 12, 'Orange', '2010-01-02', 5, true, 7);
+select * from animals;
+ALTER TABLE animals
+ ADD AUTO_INCREMENT;
+ INSERT INTO animals (name, date_of_birth, escape_attemps, neuterd, weight_kg) values ('bobby', '2020-04-04', 1, true, 10);
+ALTER TABLE animals 
+ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY;
+delete from animals where id = 21;
+update animals set species = 'digimon' where name like '%mon';
+update animals set species = 'pokemon' where species is null;
+delete from animals where date_of_birth > '2022-01-01';
+SAVEPOINT younger_than_2022_animals;
+ROLLBACK;
+select * from animals;
+
+
