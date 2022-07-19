@@ -26,6 +26,7 @@ update animals set species = 'pokemon' where species is null;
 delete from animals where date_of_birth > '2022-01-01';
 SAVEPOINT younger_than_2022_animals;
 ROLLBACK;
+update animals set weight_kg = weight_kg * (-1) where weight_kg < 0;
 select * from animals;
 
 

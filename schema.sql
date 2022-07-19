@@ -6,3 +6,5 @@ CREATE TABLE animals (
     neuterd bool NOT NULL,
     weight_kg decimal
 );
+
+alter table animals add column species VARCHAR(100);
