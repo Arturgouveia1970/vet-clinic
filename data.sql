@@ -30,3 +30,22 @@ update animals set weight_kg = weight_kg * (-1) where weight_kg < 0;
 select * from animals;
 
 
+ INSERT INTO owners (full_name, age) VALUES ('Sam Smith', 34);
+INSERT INTO owners (full_name, age) VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (full_name, age) VALUES ('Bob', 45);
+INSERT INTO owners (full_name, age) VALUES ('Melody Pond', 77);
+INSERT INTO owners (full_name, age) VALUES ('Dean Winchester', 14);
+INSERT INTO owners (full_name, age) VALUES ('Jodie Whittaker', 38);
+insert into species (name) values ('Pokemon');
+insert into species (name) values ('Digimon');
+update animals set species_id = 2 where name like '%mon';
+update animals set species_id = 1 where name not like '%mon';
+update animals set owner_id = 1 where name like 'Agumon';
+update animals set owner_id = 2 where name like 'Gabumon';
+update animals set owner_id = 2 where name like 'Pikachu';
+update animals set owner_id = 4 where name like 'Plantmon';
+update animals set owner_id = 5 where name like 'Charmander';
+update animals set owner_id = 5 where name like 'Squirtle';
+update animals set owner_id = 5 where name like 'Blossom';
+update animals set owner_id = 6 where name like 'Angemon';
+update animals set owner_id = 6 where name like 'Boarmon';
