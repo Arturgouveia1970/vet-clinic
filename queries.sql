@@ -42,6 +42,6 @@ select full_name as owner, animals.name as animals_name, species.name as name_of
     on owners.id = animals.owner_id 
     where owners.full_name = 'Dean Winchester' and animals.escape_attemps = 0;
 select full_name, count(animals.owner_id) as Owns from owners
- join animals on animals.owner_id = owners.id 
- group by full_name 
- order by Owns desc;
+  join animals on animals.owner_id = owners.id 
+  group by full_name 
+  order by Owns desc;
