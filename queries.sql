@@ -37,9 +37,9 @@ select full_name as owner, animals.name as animals_name, species.name as name_of
   join owners on owners.id = animals.owner_id 
   join species on species.id = animals.species_id 
   where owners.full_name = 'Jennifer Orwell' and species.name = 'Digimon';
-  select name, escape_attemps,full_name from animals
-    join owners
-    on owners.id = animals.owner_id 
+select name, escape_attemps,full_name from animals
+  join owners
+  on owners.id = animals.owner_id 
     where owners.full_name = 'Dean Winchester' and animals.escape_attemps = 0;
 select full_name, count(animals.owner_id) as Owns from owners
   join animals on animals.owner_id = owners.id 
