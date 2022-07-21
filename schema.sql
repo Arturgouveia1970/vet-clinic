@@ -58,4 +58,4 @@ CREATE TABLE visits (
   date_of_visit DATE NOT NULL,
   CONSTRAINT fk_visit_animal FOREIGN KEY(animal_id) REFERENCES animals(id),
   CONSTRAINT fk_visit_vet FOREIGN KEY(vet_id) REFERENCES vets(id)
-  );
+);
