@@ -116,3 +116,11 @@ select count(visits.animal_id) as NUMBER_OF_VISITS from visits
      group by species.name 
      order by visit_count 
      desc limit 1;
+
+select count(*) from visits WHERE animal_id = 4;
+select * from visits WHERE vet_id = 2;
+select * from owners WHERE email = 'owner_18327@mail.com';
+
+EXPLAIN analyze SELECT * from owners WHERE email = 'owner_18327@mail.com';
+EXPLAIN analyze select * from visits WHEREmvet_id = 2;
+EXPLAIN analyze select count(*) from visits WHERE animal_id = 4;
