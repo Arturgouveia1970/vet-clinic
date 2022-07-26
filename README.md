@@ -2,6 +2,7 @@
 
 > In this project I used a relational database to create the initial data structure for a vet-clinic. I created a table to store animals information, insert data into it and queried it.
 (https://drawsql.app/microverse-87/diagrams/vet-clinic/embed)
+![drawSQL-export-2022-07-26_11_39](https://user-images.githubusercontent.com/94650066/180987402-0fe79a08-914e-40b9-98be-a8799ffac821.png)
 
 ## Getting Started
 
